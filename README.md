@@ -6,7 +6,7 @@ Application permettant d'ajouter les boissons bues lors d'une soirée pour calcu
 Liens
 =====
 
-antoine-dekens.be/nectar  || application
+http://antoine-dekens.be/nectar  || application
 
 http://marekkuczma.be/nectar/	|| site de présentation
 
