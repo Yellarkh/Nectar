@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport"  content="width=device-width, initial-scale=1.0, user-scalable=no minimal-ui”">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>Nectar</title>
+	<link rel="apple-touch-startup-image" href="/splash1.png">
+	<link rel="apple-touch-startup-image" href="/splash.png">
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/app/appIcon57x57.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/app/appIcon72x72.png">
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/app/appIcon76x76.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x144" href="img/app/appIcon114x144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/app/appIcon120x120.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/app/appIcon144x144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/app/appIcon152x152.png">
+	<link rel="stylesheet" href="stylesheets/reset.css">
+	<link rel="stylesheet" href="stylesheets/font.css">
+	<link rel="stylesheet" href="stylesheets/main.css">
+	<link rel="stylesheet" href="stylesheets/add2home.css">
+	<script type="text/javascript">
+	var addToHomeConfig = {
+	animationIn: 'bubble',
+	animationOut: 'drop',
+	lifespan:10000,
+	expire:2,
+	touchIcon:true,
+	message:"Aller viens, on est bien ! Il suffit d'installer l'application sur ton écran d'accueil"
+};
+</script>
+	<script type="application/javascript" src="js/add2home.js"></script>
+
+	
+	<!-- <link rel="apple-touch-icon" sizes="114x114" href="img/app/apple-touch-icon-114x114.png"/> -->
+
+</head>
+<body>
+
+
+<div id="container" class="container">
+
+	<header>
+			
+			<h1 id="titre">Hello ami buveur</h1>
+			<p id="togg"></p>
+	
+	</header>
+
+	<section id="menu">
+		
+		<ul id="sousmenu">
+			<li class="logo">Nectar</li>
+			<li><span></span><p>Boissons</p></li>
+			<li><span class="effect"></span><p>Effets</p></li>
+			<li><span class="conso"></span><p>Consommation</p></li>
+			<li><span class="resu"></span><p>Résultat</p></li>
+			<li class="active"><span class="pro"></span><p>Profil</p></li>
+		</ul>
+	</section>
+
+	<div id="bois" class="pages">
+
+
+		<ul id="bulles">
+		
+				<li class="thispage"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>	
+
+		</ul>
+
+		<section class="boissons first">
+
+			<ul class="drinks">
+
+					<li class="square pill25" drink="Pills 25cl" pourcentage="0.05" quantite="250"><p>Pills 25cl</p></li>
+
+					<li class="square pill33" drink="Pills 33cl" pourcentage="0.05" quantite="330"><p>Pills 33cl</p></li>
+
+					<li class="square pill50" drink="Pills 50cl" pourcentage="0.05" quantite="500"><p>Pills 50cl</p></li>
+
+					<li class="square spec33" drink="Spéciale 33cl" pourcentage="0.1" quantite="330"><p>Spéciale 33cl</p></li>
+
+					<li class="square spec50" drink="Spéciale 50cl" pourcentage="0.1" quantite="500"><p>Spéciale 50cl</p></li>
+					
+					
+					
+				</ul>
+
+		</section>
+
+		<section class="eaux boissons">
+			
+			<ul class="drinks">
+				
+				<li class="square arma" drink="Armagnac" pourcentage="0.44" quantite="40"><p>Armagnac</p></li>
+
+				<li class="square calva" drink="Calvados" pourcentage="0.4" quantite="40"><p>Calvados</p></li>
+
+				<li class="square gin" drink="Gin" pourcentage="0.4" quantite="40"><p>Gin</p></li>
+
+				<li class="square rhum" drink="Rhum" pourcentage="0.4" quantite="40"><p>Rhum</p></li>
+
+				<li class="square tequ" drink="Tequila" pourcentage="0.55" quantite="40"><p>Tequila</p></li>
+
+				<li class="square vod" drink="Vodka" pourcentage="0.4" quantite="40"><p>Vodka</p></li>
+
+				<li class="square whi" drink="Whisky" pourcentage="0.4" quantite="40"><p>Whisky</p></li>
+			</ul>
+			
+
+		</section>
+		
+		<section class="liqueurs boissons">
+			
+			<ul class="drinks">
+					
+					<li class="square abs" drink="Absinthe" pourcentage="0.5" quantite="20"><p>Absinthe</p></li>
+
+					<li class="square ama" drink="Amaretto" pourcentage="0.28" quantite="20"><p>Amaretto</p></li>
+
+					<li class="square char" drink="Chartreuse" pourcentage="0.55" quantite="20"><p>Chartreuse</p></li>
+
+					<li class="square coin" drink="Cointreau" pourcentage="0.4" quantite="20"><p>Cointreau</p></li>
+
+					<li class="square crem" drink="Crème" pourcentage="0.4" quantite="20"><p>Crème</p></li>
+
+					<li class="square gold" drink="Goldstrike" pourcentage="0.5" quantite="20"><p>Goldstrike</p></li>
+
+					<li class="square grand" drink="Grand Marnier" pourcentage="0.4" quantite="20"><p>Grand Marnier</p></li>
+
+					<li class="square lime" drink="Limoncello" pourcentage="0.3" quantite="20"><p>Limoncello</p></li>
+
+					<li class="square past" drink="Pastis" pourcentage="0.45" quantite="40"><p>Pastis</p></li>
+
+					<li class="square trip" drink="Triple sec" pourcentage="0.35" quantite="20"><p>Triple sec</p></li>
+					
+				</ul>
+
+		</section>
+
+		<section class="cocktail boissons">
+				
+			<ul class="drinks">
+				
+				<li class="square cuba" drink="Cuba Libre" pourcentage="0.4" quantite="60"><p>Cuba Libre</p></li>
+
+				<li class="square dai" drink="Daïquiri" pourcentage="0.35" quantite="70"><p>Daïquiri</p></li>
+
+				<li class="square mai" drink="Maï taï" pourcentage="0.5" quantite="50"><p>Maï taï</p></li>
+
+				<li class="square marg" drink="Margarita" pourcentage="0.4" quantite="48"><p>Margarita</p></li>
+
+				<li class="square moji" drink="Mojito" pourcentage="0.4" quantite="45"><p>Mojito</p></li>
+
+				<li class="square pina" drink="Pina colada" pourcentage="0.4" quantite="40"><p>Pina colada</p></li>
+
+				<li class="square sex" drink="Sex on the beach" pourcentage="0.55" quantite="40"><p>Sex on beach</p></li>
+
+				<li class="square sun" drink="Tequila sunrise" pourcentage="0.5" quantite="45"><p>Tequila sunrise</p></li>
+
+			</ul>
+		
+		</section>
+
+		<section class="vin boissons">
+				
+			<ul class="drinks">
+				
+				<li class="square champ" drink="Champagne" pourcentage="0.44" quantite="40"><p>Champagne</p></li>
+
+				<li class="square blan" drink="Vin blanc" pourcentage="0.4" quantite="40"><p>Vin blanc</p></li>
+
+				<li class="square ros" drink="Vin rosé" pourcentage="0.4" quantite="40"><p>Vin rosé</p></li>
+
+				<li class="square rou" drink="Vin rouge" pourcentage="0.4" quantite="40"><p>Vin rouge</p></li>
+
+				
+			</ul>
+
+		</section>
+
+	</div>
+
+	<section id="conso" class="pages first">
+		
+		<ul id="timeline" class="timeline">
+
+		</ul>
+	</section>
+
+	<section id="profil" class="pages first show">
+		
+		
+
+		<form action="#">
+
+			<p id="walkt">Pour pouvoir calculer le taux d'alcool que ton corps va éponger ce soir, donne nous quelques informations :</p>
+			
+			<div>
+				
+				<input type="text" autocorrect="off" placeholder="Ton prénom" id="name">
+
+			</div>
+
+			<div>
+				
+				<input type="text" autocorrect="off" placeholder="Ton poids en kilos" id="poids">
+				
+			</div>
+
+			<div>
+				
+				<ul id="sexeChoice">
+					
+					<li sexe="homme" class="man"></li>
+					<li sexe="femme" class="woman"></li>
+
+				</ul>
+
+			</div>
+
+			<div>
+				
+				<p id="envoi">confirmer</p>
+			</div>
+		</form>
+	</section>
+	<section id="goDrink" class="pages first">
+		
+		<ul>
+			
+			<li class="illu"></li>
+			<li class="nom"></li>
+			<li class="poids"></li>
+
+		
+
+		<li class="shit">Il s’agit d’une approximation qui ne prend pas en compte les facteurs extérieurs (Si tu vomis entre deux bières forcement c'est plus pareil).</li>
+			
+		<li class="go">Bon, maintenant j'ai soif !</li>
+
+
+		</ul>
+
+	</section>
+
+	<section id="result" class="pages first">
+		
+		<ul>
+			
+			<li>Alors <span id="yourName"></span>, passé une bonne soirée? 
+			Grâce à tes données de consommations, nous pouvons estimer approximativement ton alcoolémie à : 
+			</li>
+			<li><h2 id="alcool">0 gramme / litre de sang</h2></li>
+
+			<li id="illu2" class="clef"></li>
+			<li class="text2">Petit joueur, c’est tout ? Tu vas être bon pour jouer le taximan avec tes potes.</li>
+			<li class="text2">Enjoy... et n’oublies pas de faire des photos honteuses d’eux !</li>
+		</ul>
+	</section>
+	
+</div>
+	
+</body>
+<script src="js/bouncefix.min.js"></script>
+<script src="js/hammer.min.js"></script>
+<script>
+
+	bouncefix.add('container');
+
+	function getDif(){
+
+		var illu = document.getElementsByClassName("illu");
+		illu[0].classList.remove("femme");
+		illu[0].classList.remove("homme");
+
+		if(localStorage.getItem("sexe") == "homme"){
+
+			illu[0].className += " homme";
+			return 0.7;
+			
+		}
+
+		else{
+
+			illu[0].className += " femme";
+			return 0.6;
+		}
+	};
+
+	
+	function storage(){	
+
+		var proName = document.getElementsByClassName("nom");
+		var weight = document.getElementsByClassName("poids");
+
+		if(localStorage.getItem("nom")){
+
+			document.getElementById("profil").classList.remove("show");
+			document.getElementById("goDrink").classList.add("show");
+			proName[0].innerHTML = localStorage.getItem("nom");
+			weight[0].innerHTML = localStorage.getItem("poids") + "kg";
+			document.getElementById("yourName").innerHTML = localStorage.getItem("nom");
+			getDif();
+		};
+	};
+
+	function readyToGo(){
+
+
+			document.getElementById("goDrink").classList.remove("show");
+			document.getElementById("bois").classList.add("show");
+			var button = document.getElementById("sousmenu").children;
+			for(var i = 1;i<button.length;i++){
+
+				button[i].className="";
+			};
+
+			
+				button[1].className+="active";
+			document.getElementById("titre").innerHTML = "Bières";
+	};
+
+
+
+	storage();
+	
+	Hammer(document.getElementsByClassName("go")[0]).on('tap',readyToGo,false);
+
+</script>
+<script src="js/info.js"></script>
+<script src="js/timeline.js"></script>
+<script src="js/hangover.js"></script>
+<script src="js/swipe.js"></script>
+<script src="js/showmenu.js"></script>
+<script src="js/changepage.js"></script>
+
+
+</script>
+</html>
