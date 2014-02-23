@@ -1,0 +1,690 @@
+/********** CSS **********/
+
+/********** FONT **********/
+
+@font-face {
+    font-family: 'bariol';
+    src: url('../font/bariol_regular-webfont.eot');
+    src: url('../font/bariol_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/bariol_regular-webfont.woff') format('woff'),
+         url('../font/bariol_regular-webfont.ttf') format('truetype'),
+         url('../font/bariol_regular-webfont.svg#bariol_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/********** RESET **********/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ outline: 0;
+ font-weight: inherit;
+ font-style: inherit;
+ font-size: 100%;
+ font-family: inherit;
+ vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+ outline: 0;
+}
+body {
+ line-height: 1;
+ color: black;
+ background: white;
+}
+ol, ul {
+ list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+ border-collapse: separate;
+ border-spacing: 0;
+}
+caption, th, td {
+ text-align: left;
+ font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content: "";
+}
+blockquote, q {
+ quotes: "" "";
+}
+.clear {
+  clear: both;
+}
+span{
+	display: block;
+	font-size: 10px;
+}
+a{
+	text-decoration: none;
+}
+/********** BODY **********/
+
+body{
+	font-family: 'bariol', sans-serif;
+	text-align: left;
+	line-height: 24px;
+	font-size: 16px;
+	color: #ecf0f1;
+	background: #101f29;
+}
+h1{
+	font-size: 27px;
+	line-height: 32px;
+	margin-bottom: 24px;
+	color: #f09300;
+}
+p{
+	margin:0 0 24px 0;
+}
+::selection {color: #ecf0f1;background:#f09300;}
+::-moz-selection {color: #ecf0f1;background:#f09300;}
+
+.container, .header_container{
+	max-width: 960px;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 100px 0;
+	clear: both;
+}
+.header_container{
+	padding: 0;
+	position: relative;
+}
+.column{
+	width: 222px;
+	height: auto;
+	margin-right: 24px;
+	float: left;
+}
+
+.big_column{
+	max-width: 468px;
+	width: 100%;
+	height: auto;
+	margin-right: 24px;
+	overflow: hidden;
+	float: left;
+}
+
+.row{
+	margin: 70px 0;
+	clear: both;
+	height: auto;
+	overflow: hidden;
+}
+.row_border_bottom{
+	border-bottom: 1px solid #2c3e50;
+}
+.small_margin_row{
+	margin: 35px 0;
+}
+.split{
+	width: 100%;
+	max-width: 960px;
+	height: 1px;
+	background: #2c3e50;
+	display: block;
+	margin: 0 auto;
+}
+/********** HEADER **********/
+.header{
+	width: 100%;
+	height: 98px;
+	border-bottom: 2px solid #f09300;
+	position: fixed;
+	background: #fff;
+	z-index: 10000;
+}
+#logo{
+	width: auto;
+	height: 98px;
+}
+
+.logo_link{
+	display: block;
+	width: 197px;
+	height: 98px;
+	margin: 0 0 0 50px;
+	float: left;
+}
+
+ul li {
+	display: inline-block;
+	margin-right: 50px;
+}
+.nav_link{
+	color: #f09300;
+	display: inline-block;
+	border-bottom: 2px solid transparent;
+}
+.nav_link:hover{
+	border-bottom: 2px solid #f09300;
+}
+.nav{
+	position: absolute;
+	line-height: 24px;
+	width: auto;
+	height: 24px;
+	text-align: left;
+	bottom: 24px;
+	right: 24px;
+}
+.smart_button{
+	display: none;
+}
+/********** DOWNLOAD **********/
+.p_hello{
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 12px;
+	margin-bottom: 72px;
+	text-transform: uppercase;
+	color: #f09300;
+}
+.small_p_hello{
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 72px;
+	text-align: center;
+}
+.hello_column h1{
+	text-align: center;
+}
+.orange{
+	font-size: 48px;
+	color: #f09300;
+	display: inline-block;
+}
+.download_me{
+	display: block;
+	max-width: 320px;
+	width: 100%;
+	height: 72px;
+	font-size: 24px;
+	text-align: center;
+	line-height: 72px;
+	color: #ecf0f1;
+	text-decoration: none;
+	background: #f09300;
+	clear: both;
+}
+.download_me:hover{
+	background: #EF7E05;
+	transition: background 0.8s ease;
+	-webkit-transition: background 0.8s ease;
+}
+.hello_column{
+	position: relative;
+	min-height: 250px;
+	margin-top: 150px;
+}
+.download_me_hello{
+	display: block;
+	max-width: 320px;
+	width: 100%;
+	height: 72px;
+	font-size: 24px;
+	text-align: center;
+	line-height: 72px;
+	color: #ecf0f1;
+	text-decoration: none;
+	background: #f09300;
+	clear: both;
+	position: relative;
+	margin-bottom: 10px;
+	margin: 0 auto;
+	bottom: 40px;
+
+}
+.download_me_hello:hover{
+	background: #EF7E05;
+	transition: background 0.8s ease;
+	-webkit-transition: background 0.8s ease;
+}
+/********** PRESENTATION **********/
+.app_img{
+	position: relative;
+}
+.big_img{
+	display: block;
+	margin: 0;
+	max-width: 468px;
+	height: auto;
+	width: 100%;
+}
+.anim{
+	display: block;
+	width: 262px;
+	height: 393px;
+	margin: 0;
+	position: absolute;
+	bottom: 145px;
+	left: 50%;
+	margin-left: -131px;
+}
+/********** VIDEO **********/
+
+iframe{
+	display: block;
+	width: 640px;
+	height: 480px;
+	margin: 0 auto;
+	border: 2px solid #f09300;
+}
+
+/********** FUTURE **********/
+
+.future_right ul {
+	margin-bottom:  24px;
+}
+
+.future_right li {
+}
+
+
+/********** CREDITS **********/
+
+.big_credits{
+	color: #ecf0f1;
+	text-align: center;
+}
+.team_link{
+	display: block;
+	margin: 12px auto;
+	color: #ecf0f1;
+	font-size: 17px;
+	line-height: 24px;
+	text-align: center;
+}
+.team_link:hover{
+	color: #f09300;
+	transition: background 1s linear;
+	-webkit-transition: background 1s linear;
+}
+.moomba{
+	margin: 24px auto 0 auto;
+}
+.team_link:hover .tweet, .team_link:hover .www{
+	background-position: bottom;
+}
+.team_p{
+	margin: 12px auto;
+}
+.team_img{
+	display: block;
+	margin: 0 auto;
+}
+.tweet{
+	display: inline-block;
+	margin: 0 0 0 -24px;
+	width: 24px;
+	height: 24px;
+	background: url(../imgs/twitter.png)no-repeat center;
+	background-position: top;
+	margin-right: 6px;
+	position: relative;
+	top: 5px;
+}
+.www{
+	display: inline-block;
+	margin: 0 0 0 -24px;
+	width: 24px;
+	height: 24px;
+	background: url(../imgs/www.png)no-repeat center;
+	background-position: top;
+	margin-right: 6px;
+	position: relative;
+	top: 5px;
+}
+.name{
+	color: #f09300;
+	font-size: 24px;
+	line-height: 24px;
+	margin-top: 12px;
+}
+/********** NO MARGINS **********/
+
+.no_margin{
+	margin: 0;
+}
+.float_right{
+	float: right;
+}
+.active{
+	border-bottom: 2px solid #f09300;
+}
+.smart_disp{
+	display: none;
+}
+.p_span{
+	color: #f09300;
+	font-size: 18px;
+	display: inline-block;
+	margin: 0;
+}
+.special_li{
+	display: block;
+	padding-left: 40px;
+	margin-bottom: 10px;
+
+	background: url(../imgs/list-square.png) no-repeat;
+	background-position: 0% 0%;
+}
+.future_right{
+	text-align: left;
+}
+.future_h1{
+	text-align: left;
+}
+/*********** MEDIA QUERIES **********/
+
+/*********** MEDIA QUERIES tablet **********/
+@media screen and (max-width:901px) and (min-width: 641px){
+	/********** BODY **********/
+
+	body{
+		font-family: 'bariol', sans-serif;
+		text-align: left;
+		line-height: 32px;
+		font-size: 16px;
+	}
+	h1{
+		font-size: 27px;
+		line-height: 32px;
+	}
+	.container{
+		max-width: 720px;
+	}
+
+	.column{
+		width: 348px;
+		height: auto;
+		margin-right: 24px;
+		margin-bottom: 24px;
+	}
+	.tablet_no_margin{
+		margin: 0;
+	}
+	.big_column{
+		max-width: 348px;
+	}
+	.big_column br{
+		display: none;
+	}
+	.split{
+		max-width: 720px;
+	}
+	/********** HEADER **********/
+	.header{
+		width: 100%;
+		height: 98px;
+		border-bottom: 2px solid #f09300;
+		position: fixed;
+		background: #fff;
+	}
+
+	.logo_link{
+		margin: 0 0 0 24px;
+	}
+
+	ul li {
+		margin-right: 24px;
+	}
+
+	/********** DOWNLOAD **********/
+	.p_hello{
+		font-size: 14px;
+		line-height: 24px;
+		margin-top: 12px;
+		margin-bottom: 24px;
+	}
+	.small_p_hello{
+		font-size: 15px;
+		line-height: 24px;
+		margin-bottom: 24px;
+	}
+	.hello_column{
+		min-height: 372px;
+		height: 372px;
+	}
+	.hello_column h1{
+		text-align: center;
+	}
+	.hello_column br{
+		display: none;
+	}
+	.download_me_hello{
+		max-width: 348px;
+		margin-left: none;
+		margin-top: 60px;
+	}
+	.download_me_hello:hover{
+		background: #f1c40f;
+	}
+	/********** PRESENTATION **********/
+	.anim{
+		width: 194px;
+		height: 291px;
+		left: 50%;
+		margin-left: -97px;
+		bottom: 75px;
+
+	}
+
+	.anim video {
+		width: 194px;
+		height: 291px;
+	}
+	/********** VIDEO **********/
+
+	/********** FUTURE **********/
+
+	/********** CREDITS **********/
+	
+	.moomba{
+		margin: 24px auto 0 auto;
+	}
+	/********** NO MARGINS **********/
+
+	.no_margin{
+		margin: 0;
+	}
+
+}
+/*********** MEDIA QUERIES smartphone **********/
+@media screen and (max-width:640px){
+
+	/********** BODY **********/
+
+	body{
+		text-align: center;
+		line-height: 32px;
+		font-size: 16px;
+		color: #ecf0f1;
+		background: #132531;
+	}
+	h1{
+		font-size: 23px;
+		margin-bottom: 12px;
+		text-align: left;
+	}
+	.orange{
+		font-size: 32px;
+	}
+
+	.container{
+		max-width: 280px;
+	}
+
+	.column, .big_column{
+		width: 280px;
+		margin: 0 auto 24px auto;
+		display: block;
+	}
+
+	.big_column br{
+		display: none;
+	}
+
+	.row{
+		margin: 60px 0;
+	}
+	.split{
+		max-width: 280px;
+	}
+
+	/********** HEADER **********/
+
+	.header{
+		width: 100%;
+		height: 58px;
+		border-bottom: 2px solid #f09300;
+		position: fixed;
+		background: #fff;
+		font-size: 14px;
+	}
+	#logo{
+		width: auto;
+		height: 58px;
+	}
+	.logo_link{
+		display: block;
+		width: 118px;
+		height: 58px;
+		margin: 0 auto;
+		float: none;
+	}
+
+	ul li {
+		display: inline-block;
+		margin-right: 12px;
+		line-height: 32px;
+	}
+	.nav{
+		max-width: 320px;
+		display: block;
+		width: 320px;
+		height: 48px;
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+		position: relative;
+		bottom: 0;
+		right: 0;
+	}
+	.smart_button{
+		display: block;
+		width: 32px;
+		height: 32px;
+		background: url(../imgs/smart_button.png) no-repeat center;
+		position: fixed;
+		top: 13px;
+		right: 24px;
+		cursor: pointer;
+	}
+	.smart_nav_container{
+		background: #fff;
+		padding-top: 2px;
+		border-bottom: 2px solid #f09300;
+		z-index: 1000;
+	}
+	.smart_nav_container{
+		display: none;
+	}
+	/********** DOWNLOAD **********/
+
+	.download_me{
+		max-width: 280px;
+		height: 72px;
+		margin: 24px auto;
+		font-size: 24px;
+		text-align: center;
+		line-height: 72px;
+	}
+	.app_img{
+		padding-top: 72px;
+	}
+	.app_img_smart{
+		display: none;
+	}
+	.download_me_hello{
+		max-width: 280px;
+		height: 72px;
+		margin: 24px auto;
+		font-size: 24px;
+		text-align: center;
+		line-height: 72px;
+		left: 50%;
+		margin-left: -140px;
+	}
+	.smart_disp{
+		display: block;
+	}
+	.small_p_hello{
+		text-align: center;
+	}
+	.hello_column{
+		min-height: none;
+	}
+
+	.hello_column br{
+		display: none;
+	}
+		
+	.download_me_hello{
+		max-width: 280px;
+		margin-left: -140px;
+	}
+	/********** PRESENTATION **********/
+	.anim{
+		width: 156px;
+		height: 234px;
+		left: 50%;
+		margin-left: -78px;
+		bottom: 60px;
+	}
+
+	.anim video {
+		width: 156px;
+		height: 234px;
+	}
+
+	.big_column {
+		text-align: left;
+	}
+	/********** VIDEO **********/
+
+	iframe{
+		width: 276px;
+		height: 205px;
+	}
+
+	/********** FUTURE **********/
+
+	/********** CREDITS **********/
+
+	/********** NO MARGINS **********/
+
+	.no_margin, .smart_nav{
+		margin: 0;
+	}
+	.smart_disp{
+		margin-bottom: 120px;
+	}
+}
